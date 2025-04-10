@@ -29,35 +29,61 @@ h2.title{
     box-sizing: border-box;
 }
 
-p.text{
+p.text-first{
     color: whitesmoke;
+    background-color: rgba(95, 10, 10, 0.733);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
     text-align: left;
+    margin: 0rem;
     margin-left: 1.1rem;
     margin-right: 1.1rem;
-    margin-top: 0.4rem;
-    margin-bottom: 0.4rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    padding: .4rem;
+    text-indent: 0.8rem;
+    box-sizing: border-box;
+}
+
+p.text{
+    color: whitesmoke;
+    background-color: rgba(95, 10, 10, 0.733);
+    text-align: left;
+    margin: 0rem;
+    margin-left: 1.1rem;
+    margin-right: 1.1rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    padding: .4rem;
     text-indent: 0.8rem;
     box-sizing: border-box;
 }
 
 p.text-final{
     color: whitesmoke;
+    background-color: rgba(95, 10, 10, 0.733);
     text-align: left;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    margin: 0rem;
     margin-left: 1.1rem;
     margin-right: 1.1rem;
-    margin-top: 0.4rem;
-    margin-bottom: 2.5rem;
+    padding-top: 0.4rem;
+    padding-bottom: 2.5rem;
+    padding: .3rem;
     text-indent: 0.8rem;
     box-sizing: border-box;
 }
 
 ul.text{
     color: whitesmoke;
+    background-color: black;
     text-align: left;
+    margin: 0rem;
     margin-left: 1.1rem;
     margin-right: 1.1rem;
-    margin-top: 0.6rem;
-    margin-bottom: 0.6rem;
     padding-left: 1.1rem;
+    padding-top: .4rem;
+    padding-bottom: .4rem;
     box-sizing: border-box;
 }
