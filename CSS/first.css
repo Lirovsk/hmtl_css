@@ -9,11 +9,14 @@ body {
 }
 
 h1.header{
+    background-color: red;
     color: white;
     text-align: left;
-    margin-top: 1rem;
-    margin-left: 0.6rem;
-    margin-bottom: 1.2rem;
+    margin-top: .7rem;
+    margin-bottom: 0rem;
+    padding-top: 1rem;
+    padding-left: .6rem;
+    padding-bottom: 1.2rem;
     box-sizing: border-box;
 }
 h2.title{
