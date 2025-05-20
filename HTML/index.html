@@ -7,48 +7,71 @@
         <link rel="stylesheet" href="../CSS/first.css">
 
         <title>Página de teste</title>
-
     </head>
     <body>
         <header>
-            <h1 class="header">Apenas mais um site sobre front-end.</h1>
+            <div>
+                <h1 class="header">Apenas mais um site sobre front-end.</h1>
+            </div>
         </header>
-        <h2 class="title"> É, pode parecer clichê. Mas esse aqui é só mais um site voltado para aprender os conceitos de HTML e CSS</h2>
-        <p class="text-first">Sim, você não leu errado, eu sou mais um daqueles jovens que sonha em trabalhar com programação, bem, eu espero que funcione. Com esse obejtivo de ser um desenvolvedor fullstack na cabeça,
-            decidi montar um site para colocar alguns conhecimentos em prática.
-            alguns desses conceitos vão ser introduzidos de forma implícita (como está ocorrendo nesse parágrafo com o uso de containers h1, h2 e p)
-            e outros de maneira explícita onde irei demonstrar o uso e compartilhar trechos de código. Os prinicpais conceitos que gostaria de trabalhar como HTML por agora, seriam:
-        </p>
-        <ul class="text">
-            <li>O uso correto dos containers;</li>
-            <li>Uso correto de objetos aninhados;</li>
-            <li>Entendimento sobre listas</li>
-            <li>Usar o conceito "Mobile first"</li>
-        </ul>
-        <p class="text-final">Eu acho que deu para pegar a ideia, não? o objetivo aqui é criar um espaço para a gente (sim, eu e você) que estamos começando, achando que tudo é impossível e sempre vai dar errado. Se alguém, 
-            aleém de mim é claro, estiver lendo isso, é sinal que as coisas começaram a dar certo. Então não perca a esperança na gente, porque eu não estou perdendo a minha...
-        </p>
-        
-        
-        <h2 class="title">Okay, mas o que vem agora?</h2>
-        <p class="text-first">
-            É uma boa pergunta, eu também não sei. Acho que talvez essa seria a parte em que eu descreveria o que eu to fazendo. Além de escrever (Meio óbvio, mas ok) eu to organizando esse usando os títulos 'h2'
-            como separadores de conteúdo - é, cara! eu criei esse site tem 30 minutos, e tudo que eu sei está aqui kkkkkkkkkk.
-        </p>
-        <p class="text">
-            Então até o momento eu vou essa maneira de divisão de conteúdo. Importante salientar uma coisa:
-            o que eu escrevi no arquivo css para estilizar no formate que você está vendo, sem enrolação: Eu ainda não escolhi uma fonte para o site, to usando o padrão do navegador. Eu apenas usei o normalize,
-            defini a cor de fundo (é rgb(51, 51, 51)), a cor do texto (whitesmoke), o tamanho do texto ta no automático e as outras cobnfigurações eu alterei para cada container em específico.
-            Eu também decidi usar como medida padrão o 'rem', que é uma unidade de medida relativa ao tamanho da fonte do elemento raiz (html).
-            Isso significa que, se você aumentar ou diminuir o tamanho da fonte do elemento raiz, todos os elementos que usam 'rem' também serão afetados. Isso é útil para tornar o layout mais responsivo e acessível.
-        </p>
-        <p class="text">
-            <img src="..\IMAGES\octocat-1740154594695.png" alt="octocat de óculos segurando um laptop" class="img"> 
-        </p>
-        <p class="text-final">
-            Uma coisa muito importante de salientar é dizer que eu to usando o método 'mobile firrt', então eu começo o desenvolvimento do site com um tamanho de tela de celular, depois de tudo pronto que eu vou 
-            alterar as configurações para cada tamanho de tela.
-        </p>
+        <main>
+                <h1>Bem vindo ao site!</h1>
+            <div class="texto">
+                <h2 class="texto">Factory Method</h2>
+                <p>À primeira vista, essa mudança pode parecer sem sentido: apenas mudamos a chamada do construtor de uma parte do programa para outra. 
+                No entanto, considere o seguinte: agora você pode sobrescrever o método fábrica em uma subclasse e alterar a classe de produtos que estão sendo criados pelo método.
+                </p>
+                <p>Porém, há uma pequena limitação: as subclasses só podem retornar tipos diferentes de produtos se esses produtos tiverem uma classe ou interface base em comum. 
+                Além disso, o método fábrica na classe base deve ter seu tipo de retorno declarado como essa interface.
+                </p>
+            </div>
+            <div class="texto">
+                <h2 class="texto">Abstract Factory</h2>
+                <p>O padrão Abstract Factory é um padrão de design criacional que fornece uma interface para criar famílias de objetos relacionados ou dependentes sem especificar suas classes concretas. 
+                Ele permite que você crie objetos de diferentes tipos, mas relacionados, sem acoplar seu código a classes concretas.
+                </p>
+                <p>O padrão Abstract Factory é útil quando você precisa criar objetos que pertencem a uma família específica, mas não quer depender de suas implementações concretas. 
+                Isso promove a flexibilidade e a extensibilidade do código, permitindo que você adicione novas famílias de produtos sem modificar o código existente.
+                </p>
+            </div>
+            <div class="form">
+                <h2 class="form">Preencha esse formulário para receber os emaisl osbre atualizações do site</h2>
+                <form  method="post">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+                    <p>Genero:</p>
+                    <input type="radio" id="masculino" name="genero" value="masculino">
+                    <label for="masculino">Masculino</label><br>
+                    <input type="radio" id="feminino" name="genero" value="feminino">
+                    <label for="feminino">Feminino</label>
+                    <br>
+                    <label for="cidade">Cidade:</label>
+                    <select id="cidade" name="cidade">
+                        <option value="sp">São Paulo</option>
+                        <option value="rj">Rio de Janeiro</option>
+                        <option value="bh">Belo Horizonte</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea>
+                    <br>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <div>
+                <p>
+                    ola
+                </p>
+            </div>
+        </footer>
     </body>
 
 </html>
